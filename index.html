@@ -1,205 +1,146 @@
 <!DOCTYPE html>
 <html>
+<!-- Code by Keyframe Effects -->
 <head>
-<title></title>
-<link rel="stylesheet" type="text/css" href="./style.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
-       
+	<title>Responsive Credit Card Form HTML CSS & jQuery</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+
+<div class="checkout">
+	<div>
+		<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="border-radius: 15px;position: absolute;top: 0;left: 0;height: 100%; width: 100%;">
+			<path d="M208.09,0.00 C384.68,-161.89 -117.80,438.09 200.79,150.00 L-32.18,178.09 L0.00,0.00 Z" style="stroke: none; fill: #000;"></path>
+		</svg>
+	</div>
+	
+  <div class="credit-card-box">
+    <div class="flip">
+      <div class="front">
+        <div class="chip"></div>
+        <div class="logo">
+          <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+            <g>
+              <g>
+                <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
+                         c0.447,0,4.414,0.006,4.979,0.006c0.116,0.498,0.474,2.137,0.474,2.137h3.607L44.688,16.814z M39.893,26.01
+                         c0.32-0.819,1.549-3.987,1.549-3.987c-0.021,0.039,0.317-0.825,0.518-1.362l0.262,1.23c0,0,0.745,3.406,0.901,4.119H39.893z
+                         M34.146,26.404c-0.028,2.963-2.684,4.875-6.771,4.875c-1.743-0.018-3.422-0.361-4.332-0.76l0.547-3.193l0.501,0.228
+                         c1.277,0.532,2.104,0.747,3.661,0.747c1.117,0,2.313-0.438,2.325-1.393c0.007-0.625-0.501-1.07-2.016-1.77
+                         c-1.476-0.683-3.43-1.827-3.405-3.876c0.021-2.773,2.729-4.708,6.571-4.708c1.506,0,2.713,0.31,3.483,0.599l-0.526,3.092
+                         l-0.351-0.165c-0.716-0.288-1.638-0.566-2.91-0.546c-1.522,0-2.228,0.634-2.228,1.227c-0.008,0.668,0.824,1.108,2.184,1.77
+                         C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
+                         C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
+                         c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
+                         h-3.888L19.153,16.8z"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="number"></div>
+        <div class="card-holder">
+          <label>Card holder</label>
+          <div></div>
+        </div>
+        <div class="card-expiration-date">
+          <label>Expires</label>
+          <div></div>
+        </div>
+      </div>
+      <div class="back">
+        <div class="strip"></div>
+        <div class="logo">
+          <svg version="1.1" id="visa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="47.834px" height="47.834px" viewBox="0 0 47.834 47.834" style="enable-background:new 0 0 47.834 47.834;">
+            <g>
+              <g>
+                <path d="M44.688,16.814h-3.004c-0.933,0-1.627,0.254-2.037,1.184l-5.773,13.074h4.083c0,0,0.666-1.758,0.817-2.143
+                         c0.447,0,4.414,0.006,4.979,0.006c0.116,0.498,0.474,2.137,0.474,2.137h3.607L44.688,16.814z M39.893,26.01
+                         c0.32-0.819,1.549-3.987,1.549-3.987c-0.021,0.039,0.317-0.825,0.518-1.362l0.262,1.23c0,0,0.745,3.406,0.901,4.119H39.893z
+                         M34.146,26.404c-0.028,2.963-2.684,4.875-6.771,4.875c-1.743-0.018-3.422-0.361-4.332-0.76l0.547-3.193l0.501,0.228
+                         c1.277,0.532,2.104,0.747,3.661,0.747c1.117,0,2.313-0.438,2.325-1.393c0.007-0.625-0.501-1.07-2.016-1.77
+                         c-1.476-0.683-3.43-1.827-3.405-3.876c0.021-2.773,2.729-4.708,6.571-4.708c1.506,0,2.713,0.31,3.483,0.599l-0.526,3.092
+                         l-0.351-0.165c-0.716-0.288-1.638-0.566-2.91-0.546c-1.522,0-2.228,0.634-2.228,1.227c-0.008,0.668,0.824,1.108,2.184,1.77
+                         C33.126,23.546,34.163,24.783,34.146,26.404z M0,16.962l0.05-0.286h6.028c0.813,0.031,1.468,0.29,1.694,1.159l1.311,6.304
+                         C7.795,20.842,4.691,18.099,0,16.962z M17.581,16.812l-6.123,14.239l-4.114,0.007L3.862,19.161
+                         c2.503,1.602,4.635,4.144,5.386,5.914l0.406,1.469l3.808-9.729L17.581,16.812L17.581,16.812z M19.153,16.8h3.89L20.61,31.066
+                         h-3.888L19.153,16.8z"/>
+              </g>
+            </g>
+          </svg>
+
+        </div>
+        <div class="cvv">
+          <label>CVV</label>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
   
-<nav>
-<div class="logo"> <h1 style="font-size: 15px;"> Health Awarnes  </h1> </div>
-<div class="menu" id="home">
-<a href="#home">Home</a>
-<a href="./Testimonail Slider/index.html">About</a>
-<a href="./news.html" target="_blank">news</a>
-<a href="./sign/sign.html">login</a>
-<a href="./medicine.html">medicine</a>
-<a href="./calcukator/index.html">caloris</a>
-
-
-
-</div>
-</div>
-</nav>
-<main>
-<section class="con" >
-<h3>Welcome To </h3>
-<h1> <span class="change_content"> </span> <span style="margin-top: -10px;"> | </span> </h1>
-<p>"Best way to khnow"</p>
-<a href="./meals/index.html" class="btnone">Contact us</a>
-<a href="./sign/sign.html" class="btntwo"> See Meals</a>
-</section>
-</main>
-</header>
-<br><br><br><br><br><br><br><br>
-<section id="counter" >
-  <div class="wrapper">
-    <div class="container">
-      <i class="">Cancer</i>
-      <span class="num" data-val="350">000</span>
-      <span class="text">Estatistcs</span>
-    </div>
-    <div class="container">
-      <i class=""> Corona</i>
-      <span class="num" data-val="250">000</span>
-      <span class="text">Estatistcs</span>
-    </div>
-    <div class="container">
-      <i class="">Sugary</i>
-      <span class="num" data-val="325">000</span>
-      <span class="text">Estatistcs</span>
-    </div>
-    <div class="container">
-      <i class="">vaiurs C</i>
-      <span class="num" data-val="275">000</span>
-      <span class="text">Estatistcs</span>
-    </div>
-    <div class="container">
-      <i class="">Vaiurs B</i>
-      <span class="num" data-val="275">000</span>
-      <span class="text">Estatistcs</span>
-    </div>
-  </div>
-  <!-- Script -->
-</section>
-
-
-
-<div class="rating-box">
-  <h1>How was your experience?</h1>
-  <div class="stars">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-  </div>
+  <form class="form" autocomplete="off" novalidate>
+    <fieldset>
+      <label for="card-number">Card Number</label>
+      <input type="num" id="card-number" class="input-cart-number" maxlength="4" />
+      <input type="num" id="card-number-1" class="input-cart-number" maxlength="4" />
+      <input type="num" id="card-number-2" class="input-cart-number" maxlength="4" />
+      <input type="num" id="card-number-3" class="input-cart-number" maxlength="4" />
+    </fieldset>
+    <fieldset>
+      <label for="card-holder">Card holder</label>
+      <input type="text" id="card-holder" />
+    </fieldset>
+    <fieldset class="fieldset-expiration">
+      <label for="card-expiration-month">Expiration date</label>
+      <div class="select">
+        <select id="card-expiration-month">
+          <option></option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+      </div>
+      <div class="select">
+        <select id="card-expiration-year">
+          <option></option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset class="fieldset-cvv">
+      <label for="card-cvv">CVV</label>
+      <input type="text" id="card-cvv" maxlength="3" />
+    </fieldset>
+    <a href="../otp/index.html" class="btn" >
+      submit
+    </a>
+  </form>
 </div>
 
- <br><br><br><br><br><br>
-<section class="it">
-  <div class="menu">
-    <div class="menu__wrapper"><i class="fa-solid fa-plus"></i></div>
-  
-    <ul class="menu__items">
-      <li class="menu__item">
-        <a href="#home"><i class="fa-solid fa-house"></i></a>
-      </li>
-      <li class="menu__item">
-        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-      </li>
-      <li class="menu__item">
-        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1291812091%3A1684425320083733&ifkv=Af_xneFe03BPjPYoqDmY44Kv3M6mvHcTHHU4W0gWKBX5-vox43WmFuqAEbaM23q-bXebbOQZF0jA&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa-solid fa-envelope"></i></a>
-      </li>
-      <li class="menu__item">
-        <a href="https://www.whatsapp.com/?lang=ar"><i class="fa-brands fa-whatsapp"></i></a>
-      </li>
-    </ul>
-  </div>
-</section>
 <script src="script.js"></script>
-<div class="container-fluid">
-  <h1 class="text-center mt-5 display-3 fw-bold"> ill<span class="theme-text">nesses</span></h1>
-  <hr class="mx-auto mb-5 w-25">
-  <div class="row mb-5">
-      <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <!-- card starts here -->
-          <div class="card shadow">
-              <img src="images/SERVICE-TESTIMONIAL-hospital-to-home.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                  <h3 class="text-center"> Several consultation</h3>
-                  <hr class="mx-auto w-75">
-                  <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
-                      nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
-                  </p>
-                  <button> <a href="./medicio/index-video.html" class="le">See</a></button>
-
-              </div>
-          </div>
-          <!-- card ends here -->
-      </div>
-      <!-- col ends here -->
-      <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <!-- card starts here -->
-          <div class="card shadow">
-              <img src="images/SERVICE-HERO-hospital-home-16-08-opt.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                  <h3 class="text-center"> Body consultation</h3>
-                  <hr class="mx-auto w-75">
-                  <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
-                      nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
-                  </p>
-                  <button> <a href="./medicine.html" class="le">See</a></button>
-
-              </div>
-          </div>
-          <!-- card ends here -->
-      </div>
-      <!-- col ends here -->
-      <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <!-- card starts here -->
-          <div class="card shadow">
-              <img src="images/SERVICE-TESTIMONIAL-hospital-to-home.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                  <h3 class="text-center"> Medical consultation</h3>
-                  <hr class="mx-auto w-75">
-                  <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
-                      nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
-                  </p>
-                  <button> <a href="./news.html" class="le">See</a></button>
-
-              </div>
-          </div>
-          <!-- card ends here -->
-      </div>
-      <!-- col ends here -->
-      <div class="col-12 col-sm-6 col-md-3 m-auto">
-          <!-- card starts here -->
-          <div class="card shadow">
-              <img src="images/pathoolgy.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                  <h3 class="text-center"> Health consultation</h3>
-                  <hr class="mx-auto w-75">
-                  <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi soluta est veniam sequi
-                      nemo, quas delectus eveniet ducimus rem animi. Natus non earum deleniti aliquam
-                  </p>
-                  <button> <a href="./medicio/index.html" class="le">See</a></button>
-
-              </div>
-          </div>
-          <!-- card ends here -->
-      </div>
-      <!-- col ends here -->
-  </div>
-</div>
-
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-  crossorigin="anonymous"></script>
-
-
-
-<footer class="footer">
-  <p class="footer-title">Copyright @ <span>New Cairo Team</span></p>
-</footer>
 
 </body>
 </html>
-

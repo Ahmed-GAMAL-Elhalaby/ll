@@ -1,0 +1,14 @@
+#loading, #results {
+    display: none;
+  }
+  #loading {
+    width: 100%;
+  }
+  body{
+    background-color: rgba(5, 5, 6, 0.9);
+
+  }
+  .container .row{
+    height: 90px;
+
+  }
